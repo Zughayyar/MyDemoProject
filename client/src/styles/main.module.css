@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100svh;
+}
+
+.loginPageContainer {
+    width: 100vw;
+    height: 100svh;
+    background: linear-gradient(to bottom, #4360ef 50%, #c8d7f9 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginFormContainer {
+    background-color: white;
+    width: 100%; /* removed 50vw */
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: unset; /*removed min width*/
+    box-sizing: border-box;
+    max-width: 600px;
+}
+
+.loginFormContainer Form {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.loginFormContainer form input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.dashboardContainer {
+    width: 100vw;
+}
+
+.linksContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.errorContainer {
+    width: 60%;
+    margin: 20px;
+}
+
+@media screen and (max-width: 470px) {
+    .loginFormContainer {
+        border-radius: unset;
+    }
+}
