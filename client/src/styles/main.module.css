@@ -45,6 +45,7 @@ body {
 .loginFormContainer form input{
     width: 100%;
     box-sizing: border-box;
+
 }
 
 .dashboardContainer {
@@ -69,4 +70,10 @@ body {
     .loginFormContainer {
         border-radius: unset;
     }
+}
+
+.disabledLink {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
 }

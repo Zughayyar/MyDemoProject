@@ -40,10 +40,9 @@ const Register = () => {
         <div className={styles.loginPageContainer}>
             <div className={styles.loginFormContainer}>
                 <div className={styles.linksContainer}>
-                    <Link to="/login">Login</Link>
-                    <Link to="/register">Register</Link>
+                    <Link to="/login" className={location.pathname === "/login" ? styles.disabledLink : ""}>Login</Link>
+                    <Link to="/register" className={location.pathname === "/register" ? styles.disabledLink : ""}>Register</Link>
                 </div>
-                <h1>Register</h1>
                 <Form
                     name="basic"
                     labelCol={{
